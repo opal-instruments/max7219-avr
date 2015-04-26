@@ -9,8 +9,8 @@ all:
 	$(CC) -c src/max7219.c $(LDFLAGS) $(LIBS) -o bin/build/max7219.o
 
 install: all
-	ar -cvq bin/libtiny-max7219.a $(TARGET_OBJS)
-	sudo cp bin/libtiny-max7219.a /usr/lib
+	ar -cvq bin/libmax7219-avr.a $(TARGET_OBJS)
+	sudo cp bin/libmax7219-avr.a /usr/lib
 
 clean: 
 	rm -rf bin
