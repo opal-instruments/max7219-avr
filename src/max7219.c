@@ -55,6 +55,10 @@ void max7219_put_setting(max7219_driver_t *drv, uint8_t mode, uint8_t val) {
   max7219_writec(drv, mode, val);
 }
 
+void clk_high(max7219_driver_t *drv) {
+  drv->portb |= (1<<drv->clk);
+}
+
 void clk_low(max7219_driver_t *drv) {
   drv->portb &= ~(1<<drv->clk);
 }
