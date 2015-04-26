@@ -1,0 +1,14 @@
+{
+    "name":"avr-max7219",
+    "version":"0.0.0",
+    "src": [
+        "src/avr_max7219.h",
+        "src/avr_max7219.c"
+    ],
+    "repo":"opal-instruments/avr-max7219",
+    "keywords": [
+        "avr",
+        "max7219"
+    ]
+}
+    
